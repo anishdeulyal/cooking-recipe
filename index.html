@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Heaven's Kitchen</title>
+    <link rel="shortcut icon" href="assets/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+
+    <!--HamBurger Icon-->
+<div class="bars" id="nav-action">
+    <span class="bar"> </span>
+  </div>
+  
+  <!--Navbar Links-->
+  <nav id="nav">
+    <ul>
+      <li class="shape-circle circle-one"><a href="#">Contact</a></li>
+      <li class="shape-circle circle-two"><a href="#">About Us</a></li>
+      <li class="shape-circle circle-three"><a href="add_recipe.html">Add Recipe</a></li>
+      <li class="shape-circle circle-five">
+        <a href="index.html">Home</a>
+      </li>
+    </ul>
+  </nav>
+  <center>
+    <img src="assets/logo.png" alt="" class="logo">
+    <div style="margin-top: 10px;">
+      <input type="text" id="recipe-search" style="color: #000; padding: 10px; border: 1px solid #100e0e; border-radius: 5px;" placeholder="Find a Recipe">
+  </div>
+  </center>
+  
+  
+  <!--Main Body Content-->
+<center>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 col-md-6 chief-img text-center">
+        <!-- <img src="assets/image-1978.jpeg" class="chef_img" alt="cookman"> -->
+        <div class="slogan">
+          <h1 style="color: black;">Taste the Magic of Master Chef</h1>
+          <h4 style="color: black;">Making Every Bite Count</h4>
+        </div>
+      </div>
+    </div>
+  </div>  
+    <div class="center">
+        <div class="col-lg-6 col-md-6 recipe-list">
+          <div>
+              <div id="recipe-list"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</center>
+
+
+<div class="container">
+  <h1>Recipes</h1>
+  <input type="text" id="recipe-search" placeholder="Search recipes">
+  <div id="recipe-list" class="row">
+      <!-- Recipe cards go here -->
+      <form id="recipe-form" class="container">
+        <h2>You Can Add Your recipe</h2>
+    <form id="recipe-form">
+        <label style="color: #000;" for="recipe-name"><b>Recipe Name:</b></label>
+        <input type="text" id="recipe-name" required>
+      
+        <label style="color: #000;" for="recipe-image"><b>Image URL:</b></label>
+        <input type="text" id="recipe-image" required>
+        
+        <label style="color: #000;" for="recipe-description"><b>Short Description:</b></label>
+        <textarea id="recipe-description" rows="4" maxlength="100" required></textarea>
+        
+        <label style="color: #000;" for="recipe-long_discription"><b>Long Description:</b></label>
+        <textarea id="recipe-long_discription" rows="8" required></textarea>
+        
+        <label style="color: #000;" for="recipe-ingredients"><b>Ingredients:</b></label>
+        <textarea id="recipe-ingredients" rows="4" required></textarea>
+        
+        <label style="color: #000;" for="recipe-instructions"><b>Instructions:</b></label>
+        <textarea id="recipe-instructions" rows="8" required></textarea>
+        
+        <label style="color: #000;" for="recipe-cooking-time"><b>Cooking Time (minutes):</b></label>
+        <input type="number" id="recipe-cooking-time" min="0" required>
+        
+        <label style="color: #000;" for="recipe-servings"><b>Servings:</b></label>
+        <input type="number" id="recipe-servings" min="1" required>
+        
+        <button type="submit" class="submit-btn">Add Recipe</button>
+    </form>
+</div>
+        
+        
+  <footer class="footer">
+  <ul class="list-inline">
+    <li class="list-inline-item"><a style="color: #000;"href="#"><b>Home</b></a></a></li>
+    <li class="list-inline-item"><a style="color: #000;"href="#"><b>Services</b></a></li>
+    <li class="list-inline-item"><a style="color: #000;"href="#"><b>About</b></a></li>
+    <li class="list-inline-item"><a style="color: #000;"href="#"><b>Terms</b></a></li>
+    <li class="list-inline-item"><a style="color: #000;"href="#"><b>Privacy Policy</b></a></li>
+</ul>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+
+    <p class="copyright"><b>Copyright © 2023 Anish Deulyal</b></p>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
