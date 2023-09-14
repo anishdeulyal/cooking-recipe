@@ -26,46 +26,71 @@
       </li>
     </ul>
   </nav>
-  <center><input type="text" id="recipe-search" placeholder="Search for recipes"></center>
+  <center>
+    <img src="assets/logo.png" alt="" class="logo">
+    <div style="margin-top: 10px;">
+      <input type="text" id="recipe-search" style="color: #000; padding: 10px; border: 1px solid #100e0e; border-radius: 5px;" placeholder="Find a Recipe">
+  </div>
+  </center>
   
   
   <!--Main Body Content-->
-  <div class="contain">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 recipe-list">
-          <div>
-              <div id="recipe-list"></div>
+  <center>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 col-md-6 chief-img text-center">
+          <!-- <img src="assets/image-1978.jpeg" class="chef_img" alt="cookman"> -->
+          <div class="slogan">
+            <h1 style="color: black;">Taste the Magic of Master Chef</h1>
+            <h4 style="color: black;">Making Every Bite Count</h4>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 chief-img">
-            <img src="assets/chief.jpg" class="chef_img" alt="cookman">
-            <div class="slogan">
-              <h1>The Great Nepal Restaurant</h1>
-              <p>Low cost. High quality.</p>
+      </div>
+    </div>  
+      <div class="center">
+          <div class="col-lg-6 col-md-6 recipe-list">
+            <div>
+                <div id="recipe-list"></div>
             </div>
-        </div>
+          </div>
+      </div>
     </div>
-  </div>
+  </center>
 
-  <div class="recipe-display">
-    <div id="add-recipe">
-      <h2>Add Recipe</h2>
+  <div class="container">
+    <h1>Recipes</h1>
+    <input type="text" id="recipe-search" placeholder="Search recipes">
+    <div id="recipe-list" class="row">
+        <!-- Recipe cards go here -->
+        <form id="recipe-form" class="container">
+          <h2>You Can Add Your recipe</h2>
       <form id="recipe-form">
-          <label for="recipe-name">Recipe Name:</label>
+          <label style="color: #000;" for="recipe-name"><b>Recipe Name:</b></label>
           <input type="text" id="recipe-name" required>
-          
-          <label for="recipe-image">Image URL:</label>
+        
+          <label style="color: #000;" for="recipe-image"><b>Image URL:</b></label>
           <input type="text" id="recipe-image" required>
           
-          <label for="recipe-description">Short Description:</label>
-          <textarea id="recipe-description" rows="4" maxlength="50" required></textarea>
+          <label style="color: #000;" for="recipe-description"><b>Short Description:</b></label>
+          <textarea id="recipe-description" rows="4" maxlength="100" required></textarea>
           
-          <label for="recipe-long_discription">Long Description:</label>
-          <textarea id="recipe-long_discription" rows="6" required></textarea>
+          <label style="color: #000;" for="recipe-long_discription"><b>Long Description:</b></label>
+          <textarea id="recipe-long_discription" rows="8" required></textarea>
+          
+          <label style="color: #000;" for="recipe-ingredients"><b>Ingredients:</b></label>
+          <textarea id="recipe-ingredients" rows="4" required></textarea>
+          
+          <label style="color: #000;" for="recipe-instructions"><b>Instructions:</b></label>
+          <textarea id="recipe-instructions" rows="8" required></textarea>
+          
+          <label style="color: #000;" for="recipe-cooking-time"><b>Cooking Time (minutes):</b></label>
+          <input type="number" id="recipe-cooking-time" min="0" required>
+          
+          <label style="color: #000;" for="recipe-servings"><b>Servings:</b></label>
+          <input type="number" id="recipe-servings" min="1" required>
           
           <button type="submit" class="submit-btn">Add Recipe</button>
       </form>
-  </div>
   </div>
         
   <footer class="footer">
@@ -89,7 +114,14 @@
           <ion-icon name="logo-instagram"></ion-icon>
         </a></li>
     </ul>
-    <p>Anish Deulyal</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a style="color: #000;"href="#"><b>Home</b></a></a></li>
+      <li class="list-inline-item"><a style="color: #000;"href="#"><b>Services</b></a></li>
+      <li class="list-inline-item"><a style="color: #000;"href="#"><b>About</b></a></li>
+      <li class="list-inline-item"><a style="color: #000;"href="#"><b>Terms</b></a></li>
+      <li class="list-inline-item"><a style="color: #000;"href="#"><b>Privacy Policy</b></a></li>
+  </ul>
+    <p class="copyright"><b>Copyright © 2023 Anish Deulyal</b></p>
   </footer>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
